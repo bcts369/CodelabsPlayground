@@ -1,5 +1,5 @@
 ---
-id: tutorial-dist
+id: ../docs/tutorial1
 summary: Codelabを利用した教材の作り方を簡単に説明します。
 status: [draft]
 author: bcts369
@@ -79,7 +79,7 @@ While you're free to use your own web server, this codelab is designed to work w
 
 [](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en)
 
-After installing the Web Server for Chrome app, click on the Apps shortcut on the bookmarks bar: 
+After installing the Web Server for Chrome app, click on the Apps shortcut on the bookmarks bar:
 
 <img src="img/9efdf0d1258b78e4.png" alt="Screen Shot 2016-04-11 at 4.01.20 PM.png"  width="124.00" />
 
@@ -88,7 +88,7 @@ After installing the Web Server for Chrome app, click on the Apps shortcut on th
 More help:  [Add and open Chrome apps](https://support.google.com/chrome_webstore/answer/3060053)
 </aside>
 
-In the ensuing window, click on the Web Server icon: 
+In the ensuing window, click on the Web Server icon:
 
 <img src="img/dc07bbc9fcfe7c5b.png" alt="Screen Shot 2016-02-18 at 11.45.19 AM.png"  width="72.88" />
 
@@ -110,7 +110,7 @@ Now visit your work site in your web browser (by clicking on the highlighted Web
 
 <img src="img/aa64e93e8151b642.png" alt="aa64e93e8151b642.png"  width="251.22" />
 
-This app is not yet doing anything interesting - so far, it's just a minimal skeleton with a spinner we're using to verify your web server functionality. We'll add functionality and UI features in subsequent steps. 
+This app is not yet doing anything interesting - so far, it's just a minimal skeleton with a spinner we're using to verify your web server functionality. We'll add functionality and UI features in subsequent steps.
 
 <aside class="special">
 
@@ -124,7 +124,7 @@ From this point forward, all testing/verification (e.g. the** Test It Out** sect
 
 ### **What is the app shell?**
 
-The app's shell is the minimal HTML, CSS, and JavaScript that is required to power the user interface of a progressive web app and is one of the components that ensures reliably good performance. Its first load should be extremely quick and immediately cached. "Cached" means that the shell files are loaded once over the network and then saved to the local device. Every subsequent time that the user opens the app, the shell files are loaded from the local device's cache, which results in blazing-fast startup times. 
+The app's shell is the minimal HTML, CSS, and JavaScript that is required to power the user interface of a progressive web app and is one of the components that ensures reliably good performance. Its first load should be extremely quick and immediately cached. "Cached" means that the shell files are loaded once over the network and then saved to the local device. Every subsequent time that the user opens the app, the shell files are loaded from the local device's cache, which results in blazing-fast startup times.
 
 App shell architecture separates the core application infrastructure and UI from the data. All of the UI and infrastructure is cached locally using a  [service worker](https://developers.google.com/web/fundamentals/getting-started/primers/service-workers) so that on subsequent loads, the Progressive Web App only needs to retrieve the necessary data, instead of having to load everything.
 
@@ -415,7 +415,7 @@ Now, reload your page. The Service Worker pane should now look like this.
 
 When you see information like this, it means the page has a service worker running.
 
-OK, now we're are going to take a brief detour and demonstrate a gotcha that you may encounter when developing service workers. To demonstrate, let's add an `activate` event listener below the `install` event listener in your `service-worker.js` file. 
+OK, now we're are going to take a brief detour and demonstrate a gotcha that you may encounter when developing service workers. To demonstrate, let's add an `activate` event listener below the `install` event listener in your `service-worker.js` file.
 
 ```
 self.addEventListener('activate', function(e) {
@@ -572,7 +572,7 @@ if (key !== cacheName && key !== dataCacheName) {
 
 ### **Test it out**
 
-The app should be completely offline-functional now. Save a couple of cities and press the refresh button on the app to get fresh weather data, and then go offline and reload the page. 
+The app should be completely offline-functional now. Save a couple of cities and press the refresh button on the app to get fresh weather data, and then go offline and reload the page.
 
 Then go to the **Cache Storage** pane on the **Application** panel of DevTools. Expand the section and you should see the name of your app shell and data cache listed on the left-hand side. Opening the data cache should should the data stored for each city.
 
