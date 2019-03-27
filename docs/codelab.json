@@ -1,0 +1,27 @@
+{
+  "environment": "web",
+  "source": "1OxmJJzuYJnNFvrRTEGa-G3sanoaFQ3vH_zPLQjzQNLc",
+  "format": "md",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2019-03-19T08:35:47Z",
+  "id": "tutorial-dist",
+  "duration": 0,
+  "title": "Codelabを利用した教材の作り方",
+  "author": "bcts369",
+  "summary": "Codelabを利用した教材の作り方を簡単に説明します。",
+  "theme": "web",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Web"
+  ],
+  "tags": [
+    "codelab",
+    "learning",
+    "tutorial"
+  ],
+  "feedback": "https://github.com/bcts369dojo/info/issues",
+  "url": "tutorial-dist"
+}
